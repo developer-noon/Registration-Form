@@ -1,0 +1,181 @@
+/** @format */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(Images/bg.jpeg);
+  background-size: cover;
+  color: #333;
+  font-size: 13px;
+  margin: 0;
+}
+input,
+select,
+button {
+  font-family: Montserrat, sans-serif;
+  color: #333;
+  font-size: 14px;
+}
+
+h3,
+h4 {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+
+:focus {
+  outline: none;
+}
+
+.rectangle {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  padding: 20px;
+  background: #fff;
+  max-width: 850px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section .leftcolumn {
+  width: 50%;
+  flex-grow: 1;
+  flex-basis: 200;
+}
+
+.section form {
+  width: 50%;
+  padding-top: 36px;
+  padding-left: 45px;
+  padding-right: 45px;
+  flex-grow: 1;
+  flex-basis: 200;
+}
+
+.section h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 28px;
+  font-family: Montserrat, sans-serif;
+}
+
+.formfields1 {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.formfields1 input:first-child {
+  margin-right: 25px;
+}
+.fields {
+  position: relative;
+  display: 100%;
+  margin-bottom: 24px;
+}
+.fields input {
+  width: calc(100% - 0px);
+  padding-right: 30px;
+}
+.fields .icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 14px;
+  height: auto;
+}
+.fields .icon img {
+  width: 100%;
+  height: auto;
+}
+
+.inputfields {
+  appearance: none;
+  border: 1px solid #333;
+  border: none;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  height: 30px;
+  padding-right: 0;
+
+}
+input[type="file"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  text-transform: capitalize;
+  color: #333;
+  background: transparent;
+  border: 1px solid #333;
+  padding: 8px 16px;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 0;
+}
+p {
+  display: inline-block;
+  padding: 8px 16px;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  margin-top: 12px;
+}
+select {
+  cursor: pointer;
+  color: gray;
+}
+
+select option[value=""][disabled] {
+  display: none;
+}
+
+button {
+  border: none;
+  width: 144px;
+  height: 56px;
+  margin: auto;
+  margin-top: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  background: #333;
+  font-size: 16px;
+  color: #fff;
+}
+#next {
+  width: 10%;
+  margin-top: 2px;
+  margin-left: 8px;
+}
+
+@media (max-width: 767px) {
+  section {
+    display: block;
+  }
+  .section .leftcolumn {
+    width: 100%;
+  }
+  .section form {
+    width: 100%;
+    padding: 40px 0 30px;
+  }
+  button {
+    margin-top: 60px;
+  }
+}
